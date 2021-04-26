@@ -1,6 +1,6 @@
 
 # Week 1
-I thought up of a project idea, got a lot of desig nwork thought through for week 2. Had help from a friend thinking up of an idea.
+I thought up of a project idea, got a lot of design work thought of, through for week 2. Had help from a friend thinking up of idea and I finalized it.
 ```
 - Character Idea
 - Enemy Idea
