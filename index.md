@@ -1,37 +1,14 @@
-## Welcome to GitHub Pages
 
-You can use the [editor on GitHub](https://github.com/Domeyoriginal/Luna/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+# Week 1
+I thought up of a project idea, got a lot of desig nwork thought through for week 2. Had help from a friend thinking up of an idea.
 ```
+- Character Idea
+- Enemy Idea
+- Life Skills
+- World Idea
+- E.C.T
+```
+There was so much more i had planned out just not written, I will take all of week 2 to write up documentations while i Model the Enemy/Enemies and Character.
+I had setup a Trello page as well which is in this link : [Link](https://trello.com/b/wYP5vaxr/luna-we)
+With Week2 i will have much more for the blog.
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Domeyoriginal/Luna/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
