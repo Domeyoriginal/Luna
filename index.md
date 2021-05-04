@@ -13,3 +13,9 @@ I had setup a Trello page as well which is in this [Link](https://trello.com/b/w
 
 With Week2 i will have much more to show for the blog, text and pictures included.
 
+# Week 2
+I messed around a lot with particles and ideas for a monster, didnt get far as i had trouble deciding on the final design.
+Instead i did up a moon cycle since the world will never see the sun, i needed a moon to alwasy rotate around the world and have the light get darker and brighter depending on the moons position. I want it this way for a buff of the monsters when its darker. The monsters get better and stronger from taking power of the drakness.
+
+I had also messed around with the design for the main character, and the other NPC's. With the help of a friend for designing characters we picked out that each non monster npc will we surroudned in cloth to keep warm. There is no sun so there is no heat. The world will also be in an iceage of sorts becuase of the sun.
+
