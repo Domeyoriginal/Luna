@@ -6,30 +6,49 @@ public class ThirdPersonMovement : MonoBehaviour
 {
     public CharacterController controller;
     public Transform cam;
+    public Transform groundCheck;
+    public LayerMask groundMask;
 
+    float speed;
     public float initialSpeed = 6f;
-    public float speed;
     public float runningSpeed = 12f;
+
+    float gravity = -19.62f;
+    public float groundDistance = 0.4f;
+    Vector3 velocity;
+    bool isGrounded;
 
     public float turnSmoothTime = 0.1f;
     float turnSmoothVelocity;
 
     private void Start()
     {
-        //Cursor.visible = false;
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
+
         speed = initialSpeed;
 
         
-        LoadPlayerPosition();
+        //LoadPlayerPosition();
     }
 
     private void Update()
     {
+        isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
+
+        if (isGrounded && velocity.y < 0)
+        {
+            velocity.y = -2f;
+        }
+
         float horizontal = Input.GetAxisRaw("Horizontal");
         float vertical = Input.GetAxisRaw("Vertical");
 
         //noramlize = doesnt rely on frames,
         Vector3 direction = new Vector3(horizontal, 0, vertical).normalized;
+
+        velocity.y += gravity * Time.deltaTime;
+        controller.Move(velocity * Time.deltaTime);
 
         #region Movement
         if (direction.magnitude >= 0.1f)
@@ -44,10 +63,12 @@ public class ThirdPersonMovement : MonoBehaviour
         #endregion
 
         #region Running
-        if (Input.GetKeyDown(KeyCode.LeftShift))
+        //start running
+        if (Input.GetKeyDown(KeyCode.LeftShift) && isGrounded)
         {
             speed = runningSpeed;
         }
+        //stop running
         else if (Input.GetKeyUp(KeyCode.LeftShift))
         {
             speed = initialSpeed;

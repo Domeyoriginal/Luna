@@ -26,8 +26,6 @@ public class NightController : MonoBehaviour
     private void Start()
     {
         highestIntensity = targetLight.GetComponent<Light>().intensity;
-
-        //Cursor.lockState = CursorLockMode.Locked;
     }
 
     private void FixedUpdate()
