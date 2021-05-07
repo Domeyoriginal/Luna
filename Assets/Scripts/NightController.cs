@@ -6,7 +6,7 @@ public class NightController : MonoBehaviour
 {
     float angle = 90;
     float index;
-    float speed = (2 * Mathf.PI) / 2400; //[ / = seconds ]
+    float speed = (2 * Mathf.PI) / 120; //[ / = seconds ]
 
     public float radius = 500;
     public float amplitudeY = 500.0f;
@@ -27,7 +27,7 @@ public class NightController : MonoBehaviour
     {
         highestIntensity = targetLight.GetComponent<Light>().intensity;
 
-        Cursor.lockState = CursorLockMode.Locked;
+        //Cursor.lockState = CursorLockMode.Locked;
     }
 
     private void FixedUpdate()
@@ -44,7 +44,7 @@ public class NightController : MonoBehaviour
         float y = Mathf.Abs(amplitudeY * Mathf.Sin((omegaY * index) * speed));
         float z = Mathf.Cos(angle) * radius;
 
-        //lgiht and moon poisiton and rotation with worldCetre
+        //light and moon poisiton and rotation with worldCetre
         targetLight.transform.position = new Vector3(x, y/2 ,z);
         targetLight.transform.LookAt(centreOfWorld.transform);
         Moon.transform.position = targetLight.transform.position;
