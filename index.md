@@ -21,6 +21,17 @@ I had also messed around with the design for the main character, and the other N
 I had made a moon system which followed a Sin wave, it also changed the light intensity the lower or higher the moon is.
 Below is the code for it :
 ```
+float angle = 90;
+    float index;
+    float speed = (2 * Mathf.PI) / 120; //[ / = seconds ]
+
+    public float radius = 500;
+    public float amplitudeY = 500.0f;
+    public float omegaY = 1.0f;
+    public float highestIntensity;
+    
+    void UpdateTime()
+    {
         index += Time.deltaTime;
         angle += speed * Time.deltaTime;
 
@@ -36,5 +47,6 @@ Below is the code for it :
 
         //light intensity with position of moon
         targetLight.GetComponent<Light>().intensity = (y / amplitudeY) * highestIntensity;
+     }
 ```
 
