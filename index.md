@@ -58,3 +58,4 @@ The biggest thing about this week would have been that i finally finalized by id
 
 # Week 4
 I have started the inventory and updating the save system.
+I am making a main menu screen before playing the game. Made it only so you can have 4 save files max, if you want more you have to override the previous saves.
