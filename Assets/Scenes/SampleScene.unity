@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 115305457}
   - component: {fileID: 115305456}
   - component: {fileID: 115305455}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -650,7 +650,7 @@ GameObject:
   - component: {fileID: 874549342}
   - component: {fileID: 874549341}
   - component: {fileID: 874549340}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Plane
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -745,6 +745,7 @@ GameObject:
   - component: {fileID: 877306402}
   - component: {fileID: 877306404}
   - component: {fileID: 877306403}
+  - component: {fileID: 877306405}
   m_Layer: 0
   m_Name: ThirdPersonCharacter
   m_TagString: Untagged
@@ -760,7 +761,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 877306401}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.2, y: 21.3, z: -8.1}
+  m_LocalPosition: {x: -2.2, y: 3.48, z: -8.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1090678964}
@@ -782,12 +783,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   controller: {fileID: 877306404}
   cam: {fileID: 1687258585}
-  groundCheck: {fileID: 0}
+  groundCheck: {fileID: 2118340960}
   groundMask:
     serializedVersion: 2
-    m_Bits: 0
-  initialSpeed: 6
-  runningSpeed: 12
+    m_Bits: 64
+  initialSpeed: 12
+  runningSpeed: 18
   groundDistance: 0.4
   turnSmoothTime: 0.1
 --- !u!143 &877306404
@@ -808,6 +809,19 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &877306405
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 877306401}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 464a6fb8a32c1f24490dc23a89e2e544, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 877306403}
 --- !u!1 &1090678963
 GameObject:
   m_ObjectHideFlags: 0
@@ -1082,7 +1096,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1227095550}
-  m_LocalRotation: {x: 0.022219596, y: 0.000000017269294, z: -3.838115e-10, w: 0.9997531}
+  m_LocalRotation: {x: 0.022219595, y: 0.0000000171686, z: -3.8157355e-10, w: 0.9997531}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -1399,8 +1413,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1687258581}
-  m_LocalRotation: {x: 0.002850037, y: 0.03158564, z: -0.000090065456, w: 0.999497}
-  m_LocalPosition: {x: -2.2, y: 23.3, z: -25.1}
+  m_LocalRotation: {x: 0.0028500315, y: 0.031628657, z: -0.000090188194, w: 0.9994956}
+  m_LocalPosition: {x: -2.2, y: 5.48, z: -25.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1485,12 +1499,12 @@ GameObject:
   - component: {fileID: 1865834740}
   - component: {fileID: 1865834739}
   m_Layer: 5
-  m_Name: Button
+  m_Name: SaveButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1865834738
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1555,8 +1569,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 877306403}
-        m_TargetAssemblyTypeName: ThirdPersonMovement, Assembly-CSharp
+      - m_Target: {fileID: 877306405}
+        m_TargetAssemblyTypeName: SaveSystem, Assembly-CSharp
         m_MethodName: SavePlayerPosition
         m_Mode: 1
         m_Arguments:
@@ -1732,7 +1746,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1872691567}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.2, y: 23.3, z: -25.1}
+  m_LocalPosition: {x: -2.2, y: 5.48, z: -25.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 410352494}
@@ -2042,7 +2056,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2042659541}
-  m_LocalRotation: {x: 0.002850044, y: 0.03158563, z: -0.00009006575, w: 0.999497}
+  m_LocalRotation: {x: 0.0028500357, y: 0.031628653, z: -0.00009018828, w: 0.9994956}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:

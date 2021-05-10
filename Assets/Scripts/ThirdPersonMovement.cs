@@ -23,13 +23,9 @@ public class ThirdPersonMovement : MonoBehaviour
 
     private void Start()
     {
-        Cursor.visible = false;
-        Cursor.lockState = CursorLockMode.Locked;
-
+        //Cursor.visible = false;
+        //Cursor.lockState = CursorLockMode.Locked;
         speed = initialSpeed;
-
-        
-        //LoadPlayerPosition();
     }
 
     private void Update()
@@ -76,33 +72,4 @@ public class ThirdPersonMovement : MonoBehaviour
         #endregion
     }
 
-
-
-
-
-    //Need to have this on Main Menu
-    public void SavePlayerPosition()
-    {
-        SaveSystem.SavePlayer(this);
-    }
-
-    //Need to have this on Main Menu
-    void LoadPlayerPosition()
-    {
-        ThirdPersonData data = SaveSystem.LoadPlayer();
-        Vector3 position;
-
-        if (data == null)
-        {
-            SavePlayerPosition();
-        }
-        else
-        {
-            position.x = data.position[0];
-            position.y = data.position[1];
-            position.z = data.position[2];
-
-            transform.position = position;
-        }
-    }
 }
