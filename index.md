@@ -11,7 +11,7 @@ I thought up of a project idea, got a lot of design work thought of, through for
 There was so much more i have planned out just not written, I will take all of week 2 to write up documentations while i Model the Enemy/Enemies and Character.
 I had setup a Trello page as well which is in this [Link](https://trello.com/b/wYP5vaxr/luna-we).
 
-With Week2 i will have much more to show for the blog, text and pictures included.
+With Week2 i will have much more to show for the blog.
 
 # Week 2
 I messed around a lot with particles and ideas for a monster, didnt get far as i had trouble deciding on the final design.
@@ -49,4 +49,7 @@ float angle = 90;
         targetLight.GetComponent<Light>().intensity = (y / amplitudeY) * highestIntensity;
      }
 ```
-
+# Week 3
+This week i had made the character movement and gravity, no graphics done. 
+I had also made a save system with binaryformatter at first, but im going to change it to json type of saving and loading.
+The biggest thing about this week would have been that i finally finalized by ideas for an enemy and a character. I can finally start sculpting them and animating them.
