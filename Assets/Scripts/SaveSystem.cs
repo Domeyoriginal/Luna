@@ -7,33 +7,6 @@ public class SaveSystem : MonoBehaviour
 {
     public ThirdPersonMovement player;
 
-    private void Start()
-    {
-        LoadPlayerPosition();
-    }
-
-    //Need to have this on Main Menu
-    public void SavePlayerPosition()
-    {
-        SaveSystem.SaveData("Luna", new SaveData(player));
-    }
-
-    //Need to have this on Main Menu
-    public void LoadPlayerPosition()
-    {
-        SaveData data = SaveSystem.LoadData("Luna");
-
-        if (data == null)
-        {
-            SavePlayerPosition();
-        }
-        else
-        {
-            transform.position = data.playerPosition;
-        }
-    }
-
-
     public static void SaveData(string name , SaveData saveData)
     {
         string json = JsonUtility.ToJson(saveData,true);
