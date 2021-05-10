@@ -5,7 +5,6 @@ using System.Runtime.Serialization.Formatters.Binary;
 
 public class SaveSystem : MonoBehaviour
 {
-    SaveData saveData;
     public ThirdPersonMovement player;
 
     private void Start()
