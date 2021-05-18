@@ -49,6 +49,8 @@ float angle = 90;
         targetLight.GetComponent<Light>().intensity = (y / amplitudeY) * highestIntensity;
      }
 ```
+![Image](https://trello-attachments.s3.amazonaws.com/60867cc6b7f287738b24d963/608686a8ae49fd4a937e4b41/c788a17186345ba2831b7481b465d9c3/image.png)
+
 # Week 3
 This week i had made the character movement and gravity, no graphics done. 
 I had also made a save system with binaryformatter at first, but im going to change it to json type of saving and loading.
