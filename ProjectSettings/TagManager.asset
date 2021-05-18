@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Moon
   - Loot
+  - BrewingStation
   layers:
   - Default
   - TransparentFX

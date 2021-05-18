@@ -18,6 +18,6 @@ public class ThirdPersonInvetory : MonoBehaviour
 
     private void OnApplicationQuit()
     {
-        Invetory.Container.Clear();
+        
     }
 }

@@ -12,4 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84b9707a4bfc0a740ada0dbbeea69a2a, type: 3}
   m_Name: ThirdPersonInventory
   m_EditorClassIdentifier: 
-  Container: []
+  Container:
+  - Item: {fileID: 11400000, guid: d34b4dec41a30bd46a063ae6fda74b5c, type: 2}
+    Count: 0
+  - Item: {fileID: 11400000, guid: b4a280d26695b4d48998b0f1b72f8c15, type: 2}
+    Count: 0
+  - Item: {fileID: 11400000, guid: a4b9f335b13459c4fb964720ebc972e4, type: 2}
+    Count: 0
