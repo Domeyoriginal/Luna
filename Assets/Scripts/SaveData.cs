@@ -10,6 +10,5 @@ public class SaveData
     public SaveData(ThirdPersonMovement player)
     {
         playerPosition = player.transform.position;
-
     }
 }

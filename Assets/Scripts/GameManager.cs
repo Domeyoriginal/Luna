@@ -74,7 +74,7 @@ public class GameManager : MonoBehaviour
 
     public static void SaveData(string name, SaveData saveData)
     {
-        string json = JsonUtility.ToJson(saveData, true);
+        string json = JsonUtility.ToJson(saveData,true);
         string saveLocation = Application.dataPath + "/" + name + ".json";
 
         File.WriteAllText(saveLocation, json);
