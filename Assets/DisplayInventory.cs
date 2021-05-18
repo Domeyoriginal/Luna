@@ -2,11 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DisplayInventory : MonoBehaviour
+public class DisplayBrewInvenotry : MonoBehaviour
 {
     public InventoryObject Inventory;
     public Transform lstItems;
-    public List<InventorySlot> itemsDisplayed = new List<InventorySlot>();
 
     void Start()
     {
