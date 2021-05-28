@@ -10,4 +10,6 @@ public class HerbObject : ItemObject
     {
         type = ItemType.Herbs;
     }
+
+    
 }
