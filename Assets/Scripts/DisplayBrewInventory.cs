@@ -8,32 +8,52 @@ public class DisplayBrewInventory : MonoBehaviour
 
     public GameObject BrewPanel;
     public GameObject PressE;
+    public GameObject Crosshair;
 
     public Transform lstItems;
 
     public bool hasCollided;
 
-    void Start()
+    private void Start()
     {
         BrewPanel.SetActive(false);
         PressE.SetActive(false);
+        Crosshair.SetActive(true);
     }
 
-    private void FixedUpdate()
+    private void Update()
     {
-        if (hasCollided && Input.GetKey(KeyCode.E))
+        if (hasCollided && Input.GetKeyDown(KeyCode.E))
         {
-            BrewPanel.SetActive(true);
-            PressE.SetActive(false);
-            CreateDisplay();
+            if (BrewPanel.activeSelf == true)
+            {
+                
+            }
+            else if (BrewPanel.activeSelf == false)
+            {
+                BrewPanel.SetActive(true);
+                PressE.SetActive(false);
+                Crosshair.SetActive(false);
+                CreateBrewItemDisplay();
+            }
+
+            Time.timeScale = 0;
+            
         }
-        else if(!hasCollided)
+        else if (Input.GetKeyDown(KeyCode.Escape))
         {
             BrewPanel.SetActive(false);
+            Crosshair.SetActive(true);
+            Time.timeScale = 1;
+
+            foreach (Transform child in lstItems)
+            {
+                GameObject.Destroy(child.gameObject);
+            }
         }
     }
 
-    public void CreateDisplay()
+    public void CreateBrewItemDisplay()
     {
         for (int i = 0; i < Inventory.Container.Count; i++)
         {
