@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1dba1cba16036a4fb46f694c5907bc6, type: 3}
   m_Name: Health2
   m_EditorClassIdentifier: 
-  Recipe:
-  - {fileID: 2407527611892522999, guid: 681e126b6042e7f4eb2e5e57eaaae605, type: 3}
-  - {fileID: 2407527611892522999, guid: 4683ae23990fd4f4e8810ab3b61b36ff, type: 3}
-  - {fileID: 2407527611892522999, guid: 681e126b6042e7f4eb2e5e57eaaae605, type: 3}
+  Materials:
+  - Sage(Clone) (UnityEngine.GameObject)
+  - Sage(Clone) (UnityEngine.GameObject)
+  - Sage(Clone) (UnityEngine.GameObject)
+  Result: {fileID: 11400000, guid: 5f8c194d7144d2047a48875ee2ac6c86, type: 2}

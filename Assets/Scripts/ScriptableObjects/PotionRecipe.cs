@@ -6,5 +6,6 @@ using UnityEngine;
     menuName = "Items/Recipe")]
 public class PotionRecipe : ScriptableObject
 {
-    public List<GameObject> Recipe = new List<GameObject>();
+    public List<string> Materials;
+    public ItemObject Result;
 }

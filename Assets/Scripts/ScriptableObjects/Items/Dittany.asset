@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c4c47baab5b818f4e91686852e536e66, type: 3}
   m_Name: Dittany
   m_EditorClassIdentifier: 
+  Name: Dittany
   prefab: {fileID: 2407527611892522999, guid: 681e126b6042e7f4eb2e5e57eaaae605, type: 3}
   type: 0
   description: Usually for healing potions

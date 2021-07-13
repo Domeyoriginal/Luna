@@ -887,7 +887,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Inventory: {fileID: 11400000, guid: 01c9529804ebcb84fb2fd3b88dc352c4, type: 2}
-  Recipes: []
+  Recipes:
+  - {fileID: 11400000, guid: 1bf72f000834cee40917e9d90c058ada, type: 2}
+  potionCrafting: 0
   BrewPanel: {fileID: 679233621}
   PressE: {fileID: 399316062}
   Crosshair: {fileID: 1290127470}
@@ -900,6 +902,7 @@ MonoBehaviour:
   Inputs: []
   Output: {fileID: 344831188}
   hasCollided: 0
+  crafting: 0
 --- !u!1 &581150373
 GameObject:
   m_ObjectHideFlags: 0
@@ -1453,15 +1456,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4588735599576704781, guid: dad15f9d7c9122f4592f8a69d61dcdba, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.05852092
+      value: 0.058520913
       objectReference: {fileID: 0}
     - target: {fileID: 4588735599576704781, guid: dad15f9d7c9122f4592f8a69d61dcdba, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 7e-44
+      value: 0.0000000019877961
       objectReference: {fileID: 0}
     - target: {fileID: 4588735599576704781, guid: dad15f9d7c9122f4592f8a69d61dcdba, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 1.197e-42
+      value: -1.1652736e-10
       objectReference: {fileID: 0}
     - target: {fileID: 4588735599814319372, guid: dad15f9d7c9122f4592f8a69d61dcdba, type: 3}
       propertyPath: m_Name
@@ -1545,15 +1548,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4588735600118505140, guid: dad15f9d7c9122f4592f8a69d61dcdba, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.0028500317
+      value: 0.0028500378
       objectReference: {fileID: 0}
     - target: {fileID: 4588735600118505140, guid: dad15f9d7c9122f4592f8a69d61dcdba, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.03163097
+      value: 0.0316309
       objectReference: {fileID: 0}
     - target: {fileID: 4588735600118505140, guid: dad15f9d7c9122f4592f8a69d61dcdba, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.00009019478
+      value: -0.000090194764
       objectReference: {fileID: 0}
     - target: {fileID: 4588735600393445987, guid: dad15f9d7c9122f4592f8a69d61dcdba, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1569,15 +1572,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4588735600393445987, guid: dad15f9d7c9122f4592f8a69d61dcdba, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.022219595
+      value: 0.022219596
       objectReference: {fileID: 0}
     - target: {fileID: 4588735600393445987, guid: dad15f9d7c9122f4592f8a69d61dcdba, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.000000017680716
+      value: 0.000000017269276
       objectReference: {fileID: 0}
     - target: {fileID: 4588735600393445987, guid: dad15f9d7c9122f4592f8a69d61dcdba, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 3.929554e-10
+      value: -3.838111e-10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dad15f9d7c9122f4592f8a69d61dcdba, type: 3}
@@ -2307,7 +2310,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1687258581}
-  m_LocalRotation: {x: 0.002850031, y: 0.031630974, z: -0.00009019481, w: 0.99949557}
+  m_LocalRotation: {x: 0.002850031, y: 0.031630903, z: -0.00009019457, w: 0.99949557}
   m_LocalPosition: {x: -2.2, y: 5.48, z: -25.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []

@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1dba1cba16036a4fb46f694c5907bc6, type: 3}
   m_Name: Health1
   m_EditorClassIdentifier: 
-  Recipe:
-  - {fileID: 2407527611892522999, guid: 681e126b6042e7f4eb2e5e57eaaae605, type: 3}
-  - {fileID: 2407527611892522999, guid: 385bf5b17d179a04da4bf30ff10f61fe, type: 3}
-  - {fileID: 2407527611892522999, guid: 4683ae23990fd4f4e8810ab3b61b36ff, type: 3}
+  Materials:
+  - Dittany(Clone)
+  - Lavender
+  - Sage
+  Result: {fileID: 11400000, guid: cdf7d085c1b9b594ea2018bca8116d13, type: 2}

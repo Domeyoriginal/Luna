@@ -7,7 +7,8 @@ using UnityEngine.UI;
 public class DisplayBrewInventory : MonoBehaviour
 {
     public InventoryObject Inventory;
-    public List<PotionRecipe> Recipes;
+    public PotionRecipe[] Recipes;
+    public int potionCrafting;
 
     public GameObject BrewPanel;
     public GameObject PressE;
@@ -21,6 +22,9 @@ public class DisplayBrewInventory : MonoBehaviour
     public GameObject Output;
 
     public bool hasCollided;
+    public bool crafting = false;
+
+
 
     private void Start()
     {
@@ -29,42 +33,9 @@ public class DisplayBrewInventory : MonoBehaviour
         Crosshair.SetActive(true);
     }
 
-    public bool DoListsMatch(List<GameObject> list1, List<PotionRecipe> list2)
-    {
-        bool areListsEqual = false;
-
-        if (list1.Count != list2.Count)
-            return false;
-
-        if (list1.Count == list2.Count && !areListsEqual)
-        {
-            list1.Sort();
-            list2.Sort();
-
-            for (int i = 0; i < list1.Count; i++)
-            {
-                if (list2[i] == list1[i])
-                {
-                    areListsEqual = true;
-                }
-            }
-        }
-        return areListsEqual;
-    }
 
     private void Update()
     {
-        if (Inputs.Count == 3)
-        {
-            if (BrewPanel.activeSelf == true)
-            {
-                if (DoListsMatch(Inputs, Recipes))
-                {
-                    Debug.Log(Inputs);
-                }
-            }
-        }
-        
 
         if (hasCollided && Input.GetKeyDown(KeyCode.E))
         {
@@ -77,7 +48,7 @@ public class DisplayBrewInventory : MonoBehaviour
             }
 
             Time.timeScale = 0;
-            
+
         }
         else if (Input.GetKeyDown(KeyCode.Escape))
         {
@@ -91,16 +62,66 @@ public class DisplayBrewInventory : MonoBehaviour
             foreach (Transform child in lstItems)
             {
                 GameObject.Destroy(child.gameObject);
-                
+
             }
         }
     }
 
+    public bool DoListsMatch(List<GameObject> list1, List<string> list2)
+    {
+        int matchcount = 0;
+
+        if (list1.Count != list2.Count)
+        {
+            return false;
+        }
+
+        //list1.Sort(
+        //    delegate (GameObject i1, GameObject i2)
+        //    {
+        //        return i1.GetComponent<ItemObject>().Name.CompareTo(i2.name);
+        //    }
+        //    );
+        //list2.Sort();
+
+        for (int i = 0; i < list1.Count; i++)
+        {
+            if (list2[i] == list1[i].ToString())
+            {
+                matchcount++;
+            }
+        }
+
+        if (matchcount >= 3)
+            return true;
+        else
+            return false;
+
+    }
+
     public void AddInput(GameObject input)
     {
-        if (Inputs.Count < 3)
+        if (Inputs.Count < 2)
         {
             Inputs.Add(input);
+        }
+        else
+        {
+            Inputs.Add(input);
+
+            if (BrewPanel.activeSelf == true)
+            {
+                //Debug.Log("brew actve");
+
+                for (int i = 0; i < Recipes.Length; i++)
+                {
+                    if (DoListsMatch(Inputs, Recipes[i].Materials))
+                    {
+                        //Debug.Log("Lists match");
+                        Inputs.Clear();
+                    }
+                }
+            }
         }
     }
 
@@ -138,6 +159,6 @@ public class DisplayBrewInventory : MonoBehaviour
 
     private void OnApplicationQuit()
     {
-        
+
     }
 }

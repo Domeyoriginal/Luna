@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c4c47baab5b818f4e91686852e536e66, type: 3}
   m_Name: Sage
   m_EditorClassIdentifier: 
+  Name: Sage
   prefab: {fileID: 2407527611892522999, guid: 4683ae23990fd4f4e8810ab3b61b36ff, type: 3}
   type: 0
   description: Sage usually used for Healing Potions
