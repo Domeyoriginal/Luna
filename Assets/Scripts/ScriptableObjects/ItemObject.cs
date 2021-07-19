@@ -5,7 +5,8 @@ using UnityEngine.EventSystems;
 
 public enum ItemType
 {
-    Herbs
+    Herbs,
+    Potion
 }
 
 public abstract class ItemObject : ScriptableObject

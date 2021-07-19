@@ -9,10 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c4c47baab5b818f4e91686852e536e66, type: 3}
-  m_Name: PotiontestSage
+  m_Script: {fileID: 11500000, guid: 7520c30fda94a394c8b87a3ea6a35f10, type: 3}
+  m_Name: HealthSmall
   m_EditorClassIdentifier: 
-  Name: SagePotion
-  prefab: {fileID: 0}
-  type: 0
-  description: TEstSage
+  Name: HealthSmall
+  prefab: {fileID: 6700269819988640145, guid: e0a05e92b318e0e41b40b60cb84d723e, type: 3}
+  type: 1
+  description: Heals a very miniscule amount of health.
