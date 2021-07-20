@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
@@ -15,9 +16,11 @@ public class DisplayBrewInventory : MonoBehaviour
 
     //UI container
     public Transform lstItems;
+    public ScrollRect itemContainer;
     
     public List<GameObject> buttons = new List<GameObject>();
     public List<GameObject> potionButtons;
+    public GameObject buttonPressed;
 
     public List<Transform> buttTransforms;
     public List<GameObject> Inputs;
@@ -49,6 +52,7 @@ public class DisplayBrewInventory : MonoBehaviour
 
             Time.timeScale = 0;
 
+            
         }
         //close brewing UI
         else if (Input.GetKeyDown(KeyCode.Escape))
@@ -100,15 +104,17 @@ public class DisplayBrewInventory : MonoBehaviour
     //is the input of button
     public void AddInput(GameObject input)
     {
+
+        buttonPressed = input;
         //adds to input list if there is no 3 inputs
-        if (Inputs.Count < 2)
+        if (Inputs.Count < 3)
         {
             Inputs.Add(input);
+            buttons.Remove(buttonPressed);
         }
         else
         {
-            Inputs.Add(input);
-
+            buttons.Remove(input);
             //once input = 3 and brewing UI is up
             if (BrewPanel.activeSelf == true)
             {
@@ -124,16 +130,15 @@ public class DisplayBrewInventory : MonoBehaviour
 
                         potionButtons.Add(Instantiate((GameObject)Recipes[button].Result.prefab, Output.transform));
 
-                        potionButtons[button].GetComponent<Button>().onClick.AddListener(() => Inventory.AddItem(Recipes[button].Result, 1));
+                        //potionButtons[button].GetComponent<Button>().onClick.AddListener(() => Inventory.AddItem(Recipes[button].Result, 1));
                         
-                        potionButtons.Clear();
+                        //potionButtons.Clear();
                         
                     }
                 }
             }
         }
     }
-
 
     //created the buttons and input listenner.
     public void CreateBrewItemDisplay()
