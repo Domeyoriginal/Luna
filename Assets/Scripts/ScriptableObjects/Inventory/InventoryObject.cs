@@ -10,7 +10,7 @@ public class InventoryObject : ScriptableObject
     public void AddItem(ItemObject item, int count)
     {
         bool hasItem = false;
-        for (int i = 0; i < Container.Count; i++)
+        for (int i = 0; i < 1; i++)
         {
             if (Container[i].Item == item)
             {
@@ -24,6 +24,12 @@ public class InventoryObject : ScriptableObject
                 Container.Add(new InventorySlot(item, count));
             }
         }
+    }
+
+    public void RemoveItem(ItemObject item)
+    {
+        Destroy(item);
+        item = null;
     }
 }
 

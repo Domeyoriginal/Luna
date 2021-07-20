@@ -850,15 +850,14 @@ MonoBehaviour:
   lstItems: {fileID: 1724348755}
   itemContainer: {fileID: 855653692}
   buttons: []
-  potionButtons:
-  - {fileID: 0}
+  potionButtons: []
   buttonPressed: {fileID: 0}
-  buttTransforms:
-  - {fileID: 141652948}
-  - {fileID: 1475172611}
-  - {fileID: 581150374}
+  RecipeTransform1: {fileID: 141652947}
+  RecipeTransform2: {fileID: 1475172610}
+  RecipeTransform3: {fileID: 581150373}
   Inputs: []
   Output: {fileID: 344831188}
+  matchButton: 0
   hasCollided: 0
 --- !u!1 &581150373
 GameObject:
@@ -1413,15 +1412,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4588735599576704781, guid: dad15f9d7c9122f4592f8a69d61dcdba, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.05852092
+      value: 0.058520913
       objectReference: {fileID: 0}
     - target: {fileID: 4588735599576704781, guid: dad15f9d7c9122f4592f8a69d61dcdba, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -1.08e-43
+      value: -0.0000000021067341
       objectReference: {fileID: 0}
     - target: {fileID: 4588735599576704781, guid: dad15f9d7c9122f4592f8a69d61dcdba, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -1.847e-42
+      value: 1.2349967e-10
       objectReference: {fileID: 0}
     - target: {fileID: 4588735599814319372, guid: dad15f9d7c9122f4592f8a69d61dcdba, type: 3}
       propertyPath: m_Name
@@ -1533,11 +1532,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4588735600393445987, guid: dad15f9d7c9122f4592f8a69d61dcdba, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.000000017680716
+      value: 0.000000017168603
       objectReference: {fileID: 0}
     - target: {fileID: 4588735600393445987, guid: dad15f9d7c9122f4592f8a69d61dcdba, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -3.929554e-10
+      value: -3.8157358e-10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dad15f9d7c9122f4592f8a69d61dcdba, type: 3}
@@ -2390,7 +2389,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_HorizontalFit: 0
-  m_VerticalFit: 2
+  m_VerticalFit: 0
 --- !u!114 &1724348757
 MonoBehaviour:
   m_ObjectHideFlags: 0
