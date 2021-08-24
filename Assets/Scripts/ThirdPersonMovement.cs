@@ -5,6 +5,7 @@ using UnityEngine;
 public class ThirdPersonMovement : MonoBehaviour
 {
     public CharacterController controller;
+    public Animator anim;
     public Transform cam;
     public Transform groundCheck;
     public LayerMask groundMask;
@@ -32,6 +33,7 @@ public class ThirdPersonMovement : MonoBehaviour
         //Cursor.visible = false;
         //Cursor.lockState = CursorLockMode.Locked;
         speed = initialSpeed;
+        anim = GetComponent<Animator>();
     }
 
     public void SetPosition(SaveData data)
@@ -58,8 +60,25 @@ public class ThirdPersonMovement : MonoBehaviour
         controller.Move(velocity * Time.deltaTime);
 
         #region Movement
-        if (direction.magnitude >= 0.1f)
+        if (direction.magnitude >= 0.001f && speed != runningSpeed)
         {
+            anim.SetInteger("condition", 1);
+
+            float targetAngle = Mathf.Atan2(direction.x, direction.z) * Mathf.Rad2Deg + cam.eulerAngles.y;
+            float angle = Mathf.SmoothDampAngle(transform.eulerAngles.y, targetAngle, ref turnSmoothVelocity, turnSmoothTime);
+            transform.rotation = Quaternion.Euler(0f, angle, 0f);
+
+            Vector3 moveDirection = Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward;
+            controller.Move(moveDirection.normalized * speed * Time.deltaTime);
+        }
+        else if(direction.magnitude < 0.001f)
+        {
+            anim.SetInteger("condition", 0);
+        }
+        else if (direction.magnitude >= 0.001f && speed == runningSpeed)
+        {
+            anim.SetInteger("condition", 2);
+
             float targetAngle = Mathf.Atan2(direction.x, direction.z) * Mathf.Rad2Deg + cam.eulerAngles.y;
             float angle = Mathf.SmoothDampAngle(transform.eulerAngles.y, targetAngle, ref turnSmoothVelocity, turnSmoothTime);
             transform.rotation = Quaternion.Euler(0f, angle, 0f);
@@ -74,6 +93,7 @@ public class ThirdPersonMovement : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.LeftShift) && isGrounded)
         {
             speed = runningSpeed;
+            anim.SetInteger("condition", 2);
         }
         //stop running
         else if (Input.GetKeyUp(KeyCode.LeftShift))
