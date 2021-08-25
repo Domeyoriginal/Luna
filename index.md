@@ -62,6 +62,7 @@ The biggest thing about this week would have been that i finally finalized by id
 I have started the inventory and updating the save system.
 I am making a main menu screen before playing the game. Made it only so you can have 4 save files max, if you want more you have to override the previous saves.
 
+# Internval
 I had started normal work and from then on i had not much done other then ideas drawn or written. In the end i nearly gave up on the whole project and year due to me thinking i can work alone. Only recently at week 9-10 i decided that i should at least try and do as much as possible. From week 4 to week 9 i had nothing done sadly, other than did work on brewing system.
 
 # Week 10
