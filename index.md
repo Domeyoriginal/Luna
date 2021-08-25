@@ -61,3 +61,11 @@ The biggest thing about this week would have been that i finally finalized by id
 # Week 4
 I have started the inventory and updating the save system.
 I am making a main menu screen before playing the game. Made it only so you can have 4 save files max, if you want more you have to override the previous saves.
+
+I had started normal work and from then on i had not much done other then ideas drawn or written. In the end i nearly gave up on the whole project and year due to me thinking i can work alone. Only recently at week 9-10 i decided that i should at least try and do as much as possible. From week 4 to week 9 i had nothing done sadly, other than did work on brewing system.
+
+# Week 10
+I had decided to make a demo for my final project. Even though this demo will not have enemies or any life in terms of monsters or people i know that doing up the inventory and brewing system is more enjoyable than a really bad done up enemy or npc.
+
+During the week I had made up the map and finalized an area for which the player can walk around and gather some materials. I had decided to take out most of the plants as they would be too much out of place in a snowy region. 
+The brewing system nearly got done in week 9 and i had plans to make art for the plants but because of my own stupidity i had no mroe time left. I had to take somethign simple but still thought out for a design of plants and the brewing Tab.
