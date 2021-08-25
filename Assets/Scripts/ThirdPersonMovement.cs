@@ -22,10 +22,10 @@ public class ThirdPersonMovement : MonoBehaviour
     public float turnSmoothTime = 0.1f;
     float turnSmoothVelocity;
 
-    private void OnEnable()
-    {
-        GameManager.Instance.onLevelLoaded.AddListener(SetPosition);
-    }
+    //private void OnEnable()
+    //{
+    //    GameManager.Instance.onLevelLoaded.AddListener(SetPosition);
+    //}
 
     private void Start()
     {
@@ -33,7 +33,6 @@ public class ThirdPersonMovement : MonoBehaviour
         //Cursor.visible = false;
         //Cursor.lockState = CursorLockMode.Locked;
         speed = initialSpeed;
-        anim = GetComponent<Animator>();
     }
 
     public void SetPosition(SaveData data)

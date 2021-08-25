@@ -60,6 +60,18 @@ public class GameManager : MonoBehaviour
         lastSELECTED = lastSelected.name;
     }
 
+    public void DeleteSave()
+    {
+        if (File.Exists(Application.dataPath + "/" + lastSELECTED + ".json"))
+        {
+            DeleteData(lastSELECTED);
+        }
+        else
+        {
+            Debug.Log("no save");
+        }
+    }
+
     public void CreateSave()
     {
         if (File.Exists(Application.dataPath + "/" + lastSELECTED + ".json"))
@@ -117,5 +129,14 @@ public class GameManager : MonoBehaviour
         //    return null;
         //}
         #endregion
+    }
+
+    public static SaveData DeleteData(string name)
+    {
+        string saveLocation = Application.dataPath + "/" + name + ".json";
+
+        File.Delete(saveLocation);
+
+        return JsonUtility.FromJson<SaveData>(saveLocation);
     }
 }
