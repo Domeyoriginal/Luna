@@ -54,6 +54,7 @@ float angle = 90;
 # Week 3
 This week i had made the character movement and gravity, no graphics done. 
 I had also made a save system with binaryformatter at first, but im going to change it to json type of saving and loading.
+![image](https://trello.com/c/eOIwar9Q/36-main-menu)
 The biggest thing about this week would have been that i finally finalized by ideas for an enemy and a character. I can finally start sculpting them and animating them.
 
 (Need to update more of week 3)
