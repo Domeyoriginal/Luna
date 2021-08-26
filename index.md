@@ -54,6 +54,7 @@ float angle = 90;
 # Week 3
 This week i had made the character movement and gravity, no graphics done. 
 I had also made a save system with binaryformatter at first, but im going to change it to json type of saving and loading.
+
 ![image](https://user-images.githubusercontent.com/46887890/131046565-efa236e7-0415-49f5-8554-96b74553c1fa.png)
 
 The picture is an updated pic, nothign changed other than the graphical side to it.
@@ -63,11 +64,15 @@ I wanted to do the technical side first.
 
 # Week 4
 I have started the inventory and updating the save system.
+
 ![image](https://user-images.githubusercontent.com/46887890/131046763-dd102d1b-0b69-4e9e-af5e-e99995e8fe06.png)
+
 This inventory was for the brewing system, i decided to make it look like a backpack.
 
 I am making a main menu screen before playing the game. Made it only so you can have 4 save files max, if you want more you have to override the previous saves.
+
 ![image](https://user-images.githubusercontent.com/46887890/131046855-dae88d39-de1f-4f7a-9d63-df88895681e0.png)
+
 My initial design was somethign like this but way less prettier. I have crossed out Options Bar annd Extras Bar on purpose as they have no function but it makes people want to come back and see if the game is updated after a bit of time will go by.
 
 # Internval
@@ -80,8 +85,11 @@ During the week I had made up the map and finalized an area for which the player
 The brewing system nearly got done in week 9 and i had plans to make art for the plants but because of my own stupidity i had no more time left. I had to take something simple but still thought out for a design of plants and the brewing Tab.
 
 Working on the brewing system was very hard, its not even fully finished but here are some lines of code that made me proud.
+
 ![image](https://user-images.githubusercontent.com/46887890/131047134-733271d9-01e9-4387-b316-7a7fd8fdbb4d.png)
+
 The first picture was somethign we learned in another class than games development, when i first discovered this i really thought it was going to be useless.
 
 ![image](https://user-images.githubusercontent.com/46887890/131047189-fe1d2ebb-031e-4e8c-8054-a7c98e621d83.png)
+
 even though the second picture is only moving an item to allocated slot, i was still proud as i had no clue how to do it and it took way more time than i would like to admit.
