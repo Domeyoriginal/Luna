@@ -82,7 +82,12 @@ I had started normal work and from then on I had not much done other then ideas 
 I had decided to make a demo for my final project. Even though this demo will not have enemies or any life in terms of monsters or people i know that doing up the inventory and brewing system is more enjoyable than a really bad done up enemy or npc.
 
 During the week I had made up the map and finalized an area for which the player can walk around. I had decided to take out most of the plants as they would be too much out of place in a snowy region. 
-The brewing system nearly got done in week 9 and i had plans to make art for the plants but because of my own stupidity i had no more time left. I had to take something simple but still thought out for a design of plants and the brewing Tab.
+
+![image](https://user-images.githubusercontent.com/46887890/131047447-e0771f8a-161b-4273-9802-477bc2163b42.png)
+
+My plan was always for the world to be cold, there is no sun in the games universe so warmth isnt something they have known.
+
+The brewing system nearly got done in week 9 and i had plans to make art for the plants but because of my own stupidity i had no more time left. I had to make something simple but  I still thought out for a design of plants and the brewing system.
 
 Working on the brewing system was very hard, its not even fully finished but here are some lines of code that made me proud.
 
@@ -93,3 +98,10 @@ The first picture was somethign we learned in another class than games developme
 ![image](https://user-images.githubusercontent.com/46887890/131047189-fe1d2ebb-031e-4e8c-8054-a7c98e621d83.png)
 
 even though the second picture is only moving an item to allocated slot, i was still proud as i had no clue how to do it and it took way more time than i would like to admit.
+
+# Final Comments
+To tell you the truth, i am very dissapointed in my own work ethic on this project, keeping motivated and on time was never easy and that is what ruined this project. The famous phrase that would sum up my work is that "Starting is the hardest thing". And as you can see from week 4-10 thats exactly what i did not do "Start" working. 
+In terms on what i was proud, was that i have learned so much is so little work done, that if i tried to redo this project i know for a fact that i could work 200% faster and more efficient. I learned so much on crafting and inventory, I am brimming with ideas that i could do from now on and i will try to make it a reality. Im am not going to give up on this project.
+
+# Game Link
+https://lieutenantmutton.itch.io/luna
