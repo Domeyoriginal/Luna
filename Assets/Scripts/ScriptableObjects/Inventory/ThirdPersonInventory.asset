@@ -13,19 +13,15 @@ MonoBehaviour:
   m_Name: ThirdPersonInventory
   m_EditorClassIdentifier: 
   Container:
-  - Item: {fileID: 11400000, guid: a4b9f335b13459c4fb964720ebc972e4, type: 2}
-    Count: 1
-  - Item: {fileID: 11400000, guid: a4b9f335b13459c4fb964720ebc972e4, type: 2}
-    Count: 1
-  - Item: {fileID: 11400000, guid: a4b9f335b13459c4fb964720ebc972e4, type: 2}
-    Count: 1
   - Item: {fileID: 11400000, guid: d34b4dec41a30bd46a063ae6fda74b5c, type: 2}
     Count: 1
   - Item: {fileID: 11400000, guid: b4a280d26695b4d48998b0f1b72f8c15, type: 2}
     Count: 1
-  - Item: {fileID: 11400000, guid: b4a280d26695b4d48998b0f1b72f8c15, type: 2}
+  - Item: {fileID: 11400000, guid: a4b9f335b13459c4fb964720ebc972e4, type: 2}
     Count: 1
-  - Item: {fileID: 11400000, guid: 4f5f897ba6561cb4f820512952dc5b17, type: 2}
+  - Item: {fileID: 11400000, guid: a4b9f335b13459c4fb964720ebc972e4, type: 2}
+    Count: 1
+  - Item: {fileID: 11400000, guid: a4b9f335b13459c4fb964720ebc972e4, type: 2}
     Count: 1
   - Item: {fileID: 11400000, guid: 4f5f897ba6561cb4f820512952dc5b17, type: 2}
     Count: 1

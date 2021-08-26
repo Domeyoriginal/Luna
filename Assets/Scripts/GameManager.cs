@@ -5,6 +5,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 using UnityEngine.Events;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
@@ -12,6 +13,8 @@ public class GameManager : MonoBehaviour
 
     public ThirdPersonMovement player;
     public SaveData currentSave;
+    public InventoryObject inventory;
+    public Button save;
 
     GameObject lastSelected;
     public string lastSELECTED;
@@ -21,7 +24,7 @@ public class GameManager : MonoBehaviour
 
     private void Awake()
     {
-        
+        save.GetComponent<Button>().onClick.AddListener(SavePlayerPosition);
         if (Instance == null)
         {
             Instance = this;
@@ -45,7 +48,7 @@ public class GameManager : MonoBehaviour
 
     public void SavePlayerPosition()
     {
-        SaveData(lastSELECTED, new SaveData(player));
+        SaveData(lastSELECTED, new SaveData(player,inventory));
     }
 
     void LoadPlayerPosition()
@@ -77,6 +80,8 @@ public class GameManager : MonoBehaviour
         if (File.Exists(Application.dataPath + "/" + lastSELECTED + ".json"))
         {
             LoadPlayerPosition();
+
+
         }
         else
         {

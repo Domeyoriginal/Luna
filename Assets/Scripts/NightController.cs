@@ -6,7 +6,7 @@ public class NightController : MonoBehaviour
 {
     float angle = 90;
     float index;
-    float speed = (2 * Mathf.PI) / 120; //[ / = seconds ]
+    float speed = (2 * Mathf.PI) / 600; //[ / = seconds ]
 
     public float radius = 500;
     public float amplitudeY = 500.0f;

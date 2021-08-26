@@ -29,9 +29,9 @@ public class ThirdPersonMovement : MonoBehaviour
 
     private void Start()
     {
-        transform.position = GameManager.Instance.currentSave.playerPosition; 
-        //Cursor.visible = false;
-        //Cursor.lockState = CursorLockMode.Locked;
+        transform.position = GameManager.Instance.currentSave.playerPosition;
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
         speed = initialSpeed;
     }
 

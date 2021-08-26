@@ -1,0 +1,27 @@
+{
+    "playerPosition": {
+        "x": -49.09000015258789,
+        "y": 44.189998626708987,
+        "z": 3.359999895095825
+    },
+    "inventory": [
+        {
+            "Item": {
+                "instanceID": 18788
+            },
+            "Count": 1
+        },
+        {
+            "Item": {
+                "instanceID": 18790
+            },
+            "Count": 1
+        },
+        {
+            "Item": {
+                "instanceID": 18786
+            },
+            "Count": 1
+        }
+    ]
+}

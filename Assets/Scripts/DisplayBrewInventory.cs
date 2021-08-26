@@ -48,6 +48,9 @@ public class DisplayBrewInventory : MonoBehaviour
         //open brewing UI
         if (hasCollided && Input.GetKeyDown(KeyCode.E))
         {
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.None;
+
             if (BrewPanel.activeSelf == false)
             {
                 BrewPanel.SetActive(true);
@@ -62,6 +65,9 @@ public class DisplayBrewInventory : MonoBehaviour
         //close brewing UI
         else if (Input.GetKeyDown(KeyCode.Escape))
         {
+            Cursor.visible = false;
+            Cursor.lockState = CursorLockMode.Locked;
+
             BrewPanel.SetActive(false);
             Crosshair.SetActive(true);
 
