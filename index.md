@@ -75,6 +75,8 @@ I am making a main menu screen before playing the game. Made it only so you can 
 
 My initial design was somethign like this but way less prettier. I have crossed out Options Bar annd Extras Bar on purpose as they have no function but it makes people want to come back and see if the game is updated after a bit of time will go by.
 
+I have also started using GameManager which i always never liekd making. I understand that a GameManager is so handy and from now on will be using it.
+
 # Internval
 I had started normal work and from then on I had not much done other then ideas drawn or written. In the end i nearly gave up on the whole project and year due to me thinking I can work alone. Only recently at week 9-10 i decided that i should at least try and do as much as possible. From week 4 to week 9 i had nothing done sadly, other than did work on brewing system.
 
